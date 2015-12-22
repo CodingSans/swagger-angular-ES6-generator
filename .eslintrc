@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "extends": "codingsans/babel",
+  "plugins": [
+    "smells",
+    "mocha"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+/**
+ * Plugin: Mocha
+ */
+    "mocha/no-exclusive-tests": 2,
+    "mocha/handle-done-callback": 2,
+
+/**
+ * Plugin: Smells
+ */
+    "smells/no-setinterval": 2,
+    "smells/no-this-assign": 1,
+    "smells/no-complex-string-concat": 1
+  }
+}

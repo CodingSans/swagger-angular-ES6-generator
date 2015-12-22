@@ -1,0 +1,44 @@
+{
+  "name": "swagger-angular-es6-generator",
+  "version": "1.0.0",
+  "description": "Tool for generating Angular ES6 API services from Swagger files.",
+  "main": "index.js",
+  "config": {
+    "MOCHA_OPTS": "--full-trace --require co-mocha --compilers js:babel/register src/**/__tests__/*-test.js"
+  },
+  "dependencies": {
+    "babel": "^5.8.20",
+    "babel-runtime": "^5.8.20",
+    "clarify": "^1.0.5",
+    "eslint": "^1.10.3",
+    "eslint-config-codingsans": "^1.1.0",
+    "eslint-plugin-mocha": "^1.1.0",
+    "eslint-plugin-smells": "^1.0.1",
+    "koa": "^1.1.2",
+    "koa-router": "^5.3.0",
+    "koa-static": "^1.5.2",
+    "trace": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-codingsans": "^1.1.0",
+    "eslint-plugin-mocha": "^1.1.0",
+    "eslint-plugin-smells": "^1.0.1"
+  },
+  "scripts": {
+    "start": "babel-node ./src/index.js",
+    "clean": "rimraf ./build",
+    "lint": "eslint src",
+    "test": "NODE_ENV=test mocha --env test $npm_package_config_MOCHA_OPTS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingSans/swagger-angular-ES6-generator.git"
+  },
+  "author": "CodingSans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingSans/swagger-angular-ES6-generator/issues"
+  },
+  "homepage": "https://github.com/CodingSans/swagger-angular-ES6-generator#readme"
+}
